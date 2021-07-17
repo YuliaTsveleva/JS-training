@@ -4,3 +4,9 @@
 // import './toNumber.js';
 // import './toBoolean.js';
 // import './falsy-values.js';
+// import './logic-operators.js';
+// import './branches.js';
+// import './isnan.js';
+// import './scopes.js';
+import './cycles.js';
+
