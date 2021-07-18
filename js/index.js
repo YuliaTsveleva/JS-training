@@ -9,6 +9,8 @@
 // import './isnan.js';
 // import './scopes.js';
 // import './cycles.js';
-import './module-1-lesson-1.js';
+// import './module-1-lesson-1.js';
+// import './blended-theory-lesson-1.js';
+// import './blended-tasks-lesson-1.js';
 
 
