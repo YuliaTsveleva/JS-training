@@ -14,7 +14,11 @@
 // import './blended-lessons/tasks-blended-l1.js';
 // import './module-2/arrays-m2-l1.js';
 // import './module-2/arrays-repeta.js';
-import './module-2/arrays-tasks-repeta.js';
+// import './module-2/arrays-tasks-repeta.js';
+// import './module-2/functions-m2-l2.js';
+import './module-2/tasks-m2-l2.js';
+
+
 
 
 
