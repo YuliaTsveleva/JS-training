@@ -24,6 +24,22 @@ for (let i = 0; i < cart.length; i += 1) {
 }
 console.log(cart);
 
+/*та же задача через функцию*/
+const calculateTotalPrice = function (items) {
+    console.log(items);
+    let total = 0;
+    for (const item of items) {
+        total += item;
+    }
+    return total
+}
+
+const r1 = calculateTotalPrice([1, 2, 3]);
+
+console.log(`общая сумма покупок`, r1);
+console.log(calculateTotalPrice([5, 10, 15, 20]));
+console.log(calculateTotalPrice([100, 200, 300]));
+
 /*Напиши скрипт, который посчитает сумму всех четных чисел в массиве */
 
 const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
@@ -104,6 +120,34 @@ const message1 = logins.includes(loginToFind)
     : `Пользователь ${loginToFind} не найден`;
 console.log(message1);
 
+/*та же задача через функцию*/
+// const findLogin = function (allLogins, loginToFind) {
+//      for (const login of allLogins) {
+//         if (login === loginToFind) {
+//            return message = `Пользователь ${loginToFind} найден`;
+//         }
+//     }
+//     return `Пользователь ${loginToFind} не найден`;
+// };
+
+// console.log(findLogin(logins, 'avocod3r'));
+// console.log(findLogin(logins, 'k1widab3st'));
+// console.log(findLogin(logins, 'jam4l'));
+// console.log(findLogin(logins, 'poly1scute'));
+
+/*та же задача через ьернарный оператор*/
+const findLogin = function (allLogins, loginToFind) {
+    return allLogins.includes(loginToFind)
+        ? `Пользователь ${loginToFind} найден`
+        : `Пользователь ${loginToFind} не найден`;
+   
+}
+
+console.log(findLogin(logins, 'avocod3r'));
+console.log(findLogin(logins, 'k1widab3st'));
+console.log(findLogin(logins, 'jam4l'));
+console.log(findLogin(logins, 'poly1scute'));
+
 /*Напиши скрипт поиска самого маленького числа в массиве,
 при условии, что числа уникальные (не повторяются) */
 
@@ -118,6 +162,23 @@ for (const number of numbers1) {
     }
 }
 console.log(`smallestNumber:`, smallestNumber);
+
+/*та же задача через функцию*/
+const findSmallestNumber = function (numbers) {
+    let smallestNumber = numbers[0];
+
+for (const number of numbers) {
+    console.log(number);
+    if (number < smallestNumber) {
+        smallestNumber = number;
+    }
+    }
+    return smallestNumber;
+}
+
+console.log(findSmallestNumber([3, 8, 12, -2, 15]));
+console.log(findSmallestNumber([100,54,8,12,47]));
+console.log(findSmallestNumber([7,21,84,15,4]));
 
 // Найти самое большое число
 const numbers2 = [51, 18, 13, 24, 7, 85, 19];
@@ -180,6 +241,9 @@ for (const letter of letters) {
 
 console.log(invertedString);
 
+/*та же задача через функцию*/
+
+
 
 /* Делаем slug в URL из названия статьи (например, на dev.to)
 Заголовок статьи состоит только из букв и пробелов
@@ -191,3 +255,22 @@ console.log(invertedString);
 должно получиться top-10-benefits-of-react-framework
 */
 
+//  через функцию
+const slugify = function (string) {
+    return string.toLowerCase().split(' ').join('-');
+};
+
+console.log(slugify('Top 10 benefits of React framework'));
+console.log(slugify('Azur Static Web Apps are Awesome'));
+
+
+/*Напиши функцию logItems для перебора и логирования массива*/
+const logItems = function (items) {
+    for (const item of items) {
+        console.log(item);
+    }
+}
+
+logItems(['Mango', 'Kiwi', 'Poly', 'Ajax']);
+logItems([1, 2, 3, 4, 5]);
+logItems(['клавиатура', 'наушники', 'часы']);
