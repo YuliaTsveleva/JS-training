@@ -14,10 +14,14 @@
 // import './blended-lessons/tasks-blended-l1.js';
 // import './module-2/arrays-m2-l1.js';
 // import './module-2/arrays-repeta.js';
-import './module-2/arrays-and-functions-tasks-repeta.js';
+// import './module-2/arrays-and-functions-tasks-repeta.js';
 // import './module-2/functions-m2-l2.js';
 // import './module-2/tasks-m2-l2.js';
 // import './module-2/functions-repeta.js';
+// import './module-2/hw2.js';
+// import './module-3/objects-repeta-1.js';
+import './module-3/objects-m3-l1.js';
+
 
 
 
