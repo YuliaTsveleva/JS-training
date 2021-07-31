@@ -21,7 +21,12 @@
 // import './module-2/hw2.js';
 // import './module-3/objects-repeta-1.js';
 // import './module-3/objects-m3-l1.js';
-import './module-3/hw3.js';
+// import './module-3/hw3.js';
+// import './module-3/objects-m3-l2-destructuring.js';
+// import './module-3/objects-m3-l2-spread-rest.js';
+import './module-3/objects-m3-l2-tasks.js';
+
+
 
 
 
