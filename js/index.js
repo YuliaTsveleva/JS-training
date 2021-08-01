@@ -24,7 +24,10 @@
 // import './module-3/hw3.js';
 // import './module-3/objects-m3-l2-destructuring.js';
 // import './module-3/objects-m3-l2-spread-rest.js';
-import './module-3/objects-m3-l2-tasks.js';
+// import './module-3/objects-m3-l2-tasks.js';
+// import './blended-lessons/blended-lesson-2.js';
+import './blended-lessons/blended-lesson-2-tasks.js';
+
 
 
 
