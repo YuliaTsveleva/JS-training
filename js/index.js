@@ -26,13 +26,23 @@
 // import './module-3/objects-m3-l2-spread-rest.js';
 // import './module-3/objects-m3-l2-tasks.js';
 // import './blended-lessons/blended-lesson-2.js';
-import './blended-lessons/blended-lesson-2-tasks.js';
-
-
-
-
-
-
-
-
-
+// import './blended-lessons/blended-lesson-2-tasks.js';
+// import './module-4/module-4-stack.js';
+// import './module-4/module-4-cb.js';
+// import './module-4/module-4-closure.js';
+// import './module-4/module-4-this.js';
+// import './module-4/callbacks-closures-repeta.js';
+// import './module-4/repeta-arrows.js';
+// import './module-4/repeta-this.js';
+// import './module-4/hw-4.js'
+// import './module-4/module-4-l-2-tasks.js';
+// import './module-5/module-5-l-1.js';
+// import './module-5/module-5-l-1-tasks.js';
+// import './module-5/module-5-l-1-repeta.js';
+// import './module-5/module-5-l-1-repeta-counter.js';
+// import './module-5/module-5-l-2-classes.js';
+// import './module-5/hw5.js';
+// import './blended-lessons/blended-lesson-3-theory.js';
+// import './blended-lessons/blended-lesson-3-tasks.js';
+// import "./module-6/module-6-l-2.js";
+import "./module-6/repeta-m6-p1.js";
