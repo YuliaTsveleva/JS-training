@@ -213,3 +213,104 @@ console.log("ascSortedNumbers: ", ascSortedNumbers);
 
 const descSortedNumbersAscReversed = [...numbers].sort().reverse();
 console.log("descSortedNumbersAscReversed: ", descSortedNumbersAscReversed);
+
+// кастомная сортировка сложных типов
+// по игровому времени
+
+const sortedByBestPlayers = [...players].sort(
+  (prevPlayer, nextPlayer) => nextPlayer.timePlayed - prevPlayer.timePlayed
+);
+// console.table(sortedByBestPlayers);
+
+const sortedByWorstPlayers = [...players].sort(
+  (prevPlayer, nextPlayer) => prevPlayer.timePlayed - nextPlayer.timePlayed
+);
+// console.table(sortedByWorstPlayers);
+
+const byName = [...players].sort((a, b) => {
+  const result = a.name[0] > b.name[0];
+  if (result) {
+    return 1;
+  }
+  if (!result) {
+    return -1;
+  }
+  // return a.name[0] - b.name[0];
+});
+// console.table(byName);
+
+// Array.prototype.flat(depth)
+// разглаживает массив до указанной глубины
+// по умолчанию глубина 1
+// не деструктивный, не изменяет оригинал, возвращает новый разглаженный массив
+
+const array = [1, 2, [4, [5]], [6, [7, 8, [9]]]];
+// console.log(array.flat(3));
+
+// Array.prototype.flatMap(callback)
+// - комбинация map + flat
+
+const tags = tweets.map((t) => t.tags).flat();
+// console.log(tags);
+// два вызова
+
+const tags1 = tweets.flatMap((t) => t.tags);
+// console.log(tags1);
+
+// Чейнинг
+// Цепочки вызовов методов
+
+// например, сначала фильтруем, потом сортируем
+
+const numbers1 = [1, 5, 2, 4, 3];
+console.log(numbers1);
+
+const greaterThenTwo = numbers1.filter((num) => num > 2);
+console.log(greaterThenTwo);
+
+const multByThree = greaterThenTwo.map((num) => num * 3);
+console.log(multByThree);
+
+const sorted = multByThree.sort((a, b) => a - b);
+console.log(sorted);
+
+// цепочка
+
+const sorted1 = numbers1
+  .filter((num) => num > 2)
+  .map((num) => num * 3)
+  .sort((a, b) => a - b);
+
+console.log(sorted1);
+
+const players1 = [
+  { id: "id-1", tag: "Mango", isOnline: true, rank: 800 },
+  { id: "id-2", tag: "Poly", isOnline: false, rank: 600 },
+  { id: "id-3", tag: "Ajax", isOnline: true, rank: 100 },
+  { id: "id-4", tag: "Kiwi", isOnline: true, rank: 400 },
+];
+
+const onlineAndSorted = players1
+  .filter((player) => player.isOnline)
+  .sort((a, b) => a.rank - b.rank);
+
+console.table(onlineAndSorted);
+
+// Chaining в методах объекта как jquery
+
+const element = {
+  class: "",
+  hovered: false,
+  changeClass(cls) {
+    this.class = cls;
+    return this;
+  },
+  toggleHovered() {
+    this.hovered = !this.hovered;
+    return this;
+  },
+};
+
+element.toggleHovered().changeClass("open");
+console.log(element);
+// без return в методах не работает

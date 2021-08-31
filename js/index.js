@@ -45,4 +45,8 @@
 // import './blended-lessons/blended-lesson-3-theory.js';
 // import './blended-lessons/blended-lesson-3-tasks.js';
 // import "./module-6/module-6-l-2.js";
-import "./module-6/repeta-m6-p1.js";
+// import "./module-6/repeta-m6-p1.js";
+// import "./tasks/masha.js";
+// import "./module-6/hw6.js";
+// import "./blended-lessons/blended-lesson-4.js";
+import "./module-7/module-7-l-1.js";
