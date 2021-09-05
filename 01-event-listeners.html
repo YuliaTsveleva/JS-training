@@ -5,12 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- модалка -->
+    <button class="button" data-action="open-modal">Открыть модалку</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque
+          quo ea autem magnam possimus voluptatem optio error, aspernatur
+          distinctio laboriosam enim est vitae porro sunt. Voluptatem mollitia
+          quibusdam adipisci.
+        </p>
+        <button type="button" class="button" data-action="close-modal">
+          Закрыть
+        </button>
+      </div>
+    </div>
+
     <p><a href="/">На главную</a></p>
     <button type="button" class="js-target-btn">Целевая кнопка</button>
     <button type="button" class="js-add-listener">Добавить слушатель</button>
     <button type="button" class="js-remove-listener">Снять слушатель</button>
+    <br />
+    <!-- события клавиатуры -->
+    <button class="js-clear">Очистить</button>
+    <p class="output js-output"></p>
+    <!-- событие инпута -->
+    <label
+      >Имя
+      <input type="text" class="js-input" />
+    </label>
+    <p>
+      <label>
+        <input type="checkbox" class="js-license" />
+        Принимаю лицензионное соглашение
+      </label>
+    </p>
+    <button type="submit" disabled class="js-button">
+      Зарегистрироваться как <span> Аноним</span>
+    </button>
     <!-- событие сабмита формы -->
     <form class="js-register-form" autocomplete="off">
       <div role="group">
@@ -42,6 +79,7 @@
       <br />
       <button type="submit">Зарегистрироваться</button>
     </form>
+
     <script src="./js/module-7/module-7-repeta-2.js"></script>
   </body>
 </html>
