@@ -8,9 +8,27 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="hero"></div>
+    <ul class="site-nav">
+      <li class="site-nav__item">
+        <a href="" class="site-nav__link">О нас</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="" class="site-nav__link">Портфолио</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="" class="site-nav__link">Контакты</a>
+      </li>
+    </ul>
+    <div class="color-picker js-color-picker"></div>
+    <form class="form">
+      <input type="text" name="firstInput" />
+      <input type="text" name="secondInput" />
+      <button type="submit">add</button>
+    </form>
     <div class="my-class">
       <button id="dec">-</button>
-      <p>0</p>
+      <p id="count">0</p>
       <button id="inc">+</button>
     </div>
     <div>
@@ -39,6 +57,18 @@
     <button class="increment">увеличить</button>
     <p class="text">text</p>
     <button class="decrement">уменьшить</button>
+    <table class="transaction-table js-transaction-table">
+      <thead>
+        <th>ID транзакции</th>
+        <th>Сумма</th>
+        <th>Дата</th>
+        <th>Кто</th>
+        <th>Тип транзакции</th>
+        <th>Имя счета</th>
+        <th>Номер счета</th>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
   <script src="./js/index.js" type="module"></script>
 </html>

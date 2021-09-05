@@ -12,3 +12,12 @@
 li {
   width: 30%;
 }
+
+.site-nav__link {
+  color: black;
+  text-decoration: none;
+}
+
+.transaction-table {
+  border: 1px solid black;
+}

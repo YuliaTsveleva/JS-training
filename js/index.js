@@ -49,4 +49,7 @@
 // import "./tasks/masha.js";
 // import "./module-6/hw6.js";
 // import "./blended-lessons/blended-lesson-4.js";
-import "./module-7/module-7-l-1.js";
+// import "./module-7/module-7-l-1.js";
+// import "./module-7/module-7-l-2.js";
+// import "./module-7/module-7-repeta-1.js";
+import "./module-7/module-7-repeta-2.js";
